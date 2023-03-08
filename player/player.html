@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <meta name="description" content="This Is A Music Player Made By Ritik Raj" />
+    <meta name="keywords" content="Music, Player, Ritik" />
+    <link rel="stylesheet" href="/player/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="main-cont">
+        <div class="music-cont">
+            <p class="head-main" id="title">Kahani Suno 2.0</p>
+            <p class="head-sec" id="artist">Kaifi Khalil</p>
+            <div class="img-cont">
+                <img src="/images/kahanisuno.jpg" alt="Song Banner" class="song-banner" id="current-img" />
+            </div>
+            <audio src="/musics/kahanisuno.mp3" id="current-music" loop></audio>
+
+            <!-- Progress Bar For The Player -->
+            <div class="progess-cont" id="progress-cont">
+                <div class="progress-duration">
+                    <div id="current-time">0:00</div>
+                    <div id="duration">2:53</div>
+                </div>
+                <div class="progress-div" id="progress-div">
+                <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+            <!-- controls for the player -->
+            <div class="music-controls">
+                <i class="fas fa-backward" id="prev" title="Previous"></i>
+                <i class="fas fa-play main-btn" id="play" title="Play"></i>
+                <i class="fas fa-forward" id="next" title="Next"></i>
+            </div>
+        </div>
+    </div>
+    <script src="/player/script.js"></script>
+</body>
+
+</html>
